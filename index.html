@@ -8,6 +8,12 @@
         *{
             font-family: Roboto;
         }
+        .content{
+            background-color: #ebebeb;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+            max-width: 750px;
+            margin: 20 auto;
+        }
         .info li{
             list-style: none;
             padding: 0px;
@@ -36,7 +42,7 @@
             height: 330px;
             width: 270px;
             margin-top: 80px;
-            margin-left: 80px;
+            margin-left: 45px;
         }
         .bottom{
             text-align: center;
@@ -63,7 +69,7 @@
         .title{
             background-color: #7AB6A7;
             color: white;
-            max-width: 800px;
+            max-width: 725px;
             position: relative;
             top: -27px;
         }
@@ -76,81 +82,169 @@
             padding-top: 20px;
         }
         .title p,h1{
-            margin-left: 82px;
+            margin-left: 50px;
+        }
+        .table, .language{
+            margin-left: 25px;
+            padding-bottom: 20px;
+            color: rgb(49, 49, 49);
         }
         table{
-            width: 720px;
+            width: 700px;
             border-collapse: collapse;
             text-align: left;
-            margin-left: 80px;
         }
         td,th{
             border: 2px solid #9d9d9d;
             padding: 8px;
         }
+        .progress{
+            background-color: #969696;
+            border: 1px solid rgb(49, 49, 49);
+            border-radius: 100px;
+            width: 680px;
+            height: 5px;
+        }
+        .bengali-bar, .english-bar, .hindi-bar, .urdu-bar{
+            background-color: #270e42;
+            border-radius: 100px;
+            width: 680px;
+            height: 5px;
+        }
+        .english-bar{
+            width: 80%;
+        }
+        .hindi-bar{
+            width: 70%
+        }
+        .urdu-bar{
+            width: 40%;
+        }
+        .language span{
+            display: inline-flex;
+            justify-content: center;
+            font-size: 11px;
+            letter-spacing: 5px;
+            background-color: #232323;
+            color: white;
+            padding: 4px;
+            border-radius: 5px;
+        }
+        .bengali span{
+            margin-left: 600px;
+        }
+        .english span{
+            margin-left: 460px;
+        }
+        .hindi span{
+            margin-left: 370px;
+        }
+        .urdu span{
+            margin-left: 170px;
+        }
     </style>
 </head>
 <body>
-    <img src="picture.jpg" alt="Ahsan">
-    <div class="data">
-        <h3 class="bio">BIO DATA<br>
-            <span class="underline">_________________________________________________________</span></h3>
-        <ul class="info">
-            <li>Name: MD. Ahsan Amal</li>
-            <li>Birthday: July 25</li>
-            <li>Nationality: Unknown</li>
-            <li>Religious view: Muslim</li>
-            <li>Marital status: Unmarried</li>
-            <li>Gender: Male</li>
-        </ul>
-        <div class="bottom"><b>ahsan.amal0987@gmail.com</b></div>
-        <div class="bottom bottom-2"><b>+88012345-67890</b></div>
-        <div class="bottom bottom-3"><b>Manhattan, New York, USA</b></div>
-        <div class="bottom bottom-4"><b>facebook.com/ahsan.io</b></div>
-    </div>
-    <div class="title">
-        <h1>MD. AHSAN AMAL</h1>
-        <p>STUDENT</p>
-    </div>
-    <div class="table">
-        <table>
-            <tr>
-                <th>Course name</th>
-                <th>Result</th>
-                <th>Year</th>
-                <th>Board/Uni</th>
-            </tr>
-            <tr>
-                <td>JSC</td>                
-                <td>A+</td>                
-                <td>2016</td>                
-                <td>Dhaka</td>                
-            </tr>
-            <tr>
-                <td>SSC</td>                
-                <td>A</td>                
-                <td>2019</td>                
-                <td>Dhaka</td>                
-            </tr>
-            <tr>
-                <td>Diploma</td>                
-                <td>??</td>                
-                <td>2023</td>                
-                <td>BTEB</td>                
-            </tr>
-            <tr>
-                <td>B.Sc.</td>                
-                <td>??</td>                
-                <td>????</td>                
-                <td>????</td>                
-            </tr>
-            <tr>
-                <td>M.Sc.</td>                
-                <td>??</td>                
-                <td>????</td>                
-                <td>????</td>                
-            </tr>
-        </table>
+    <div class="content">
+        <img src="picture.jpg" alt="Ahsan">
+        <div class="data">
+            <h3 class="bio">BIO DATA<br>
+                <span class="underline">_________________________________________________________</span></h3>
+            <ul class="info">
+                <li>Name: MD. Ahsan Amal</li>
+                <li>Birthday: July 25</li>
+                <li>Nationality: Unknown</li>
+                <li>Religious view: Muslim</li>
+                <li>Marital status: Unmarried</li>
+                <li>Gender: Male</li>
+            </ul>
+            <div class="bottom"><b>ahsan.amal0987@gmail.com</b></div>
+            <div class="bottom bottom-2"><b>+88012345-67890</b></div>
+            <div class="bottom bottom-3"><b>Manhattan, New York, USA</b></div>
+            <div class="bottom bottom-4"><b>facebook.com/ahsan.io</b></div>
+        </div>
+        <div class="title">
+            <h1>MD. AHSAN AMAL</h1>
+            <p>STUDENT</p>
+        </div>
+        <div class="table">
+            <h2>Education Qualifications:</h2>
+            <table>
+                <tr>
+                    <th>Course name</th>
+                    <th>Result</th>
+                    <th>Year</th>
+                    <th>Board/Uni</th>
+                </tr>
+                <tr>
+                    <td>JSC</td>                
+                    <td>A+</td>                
+                    <td>2016</td>                
+                    <td>Dhaka</td>                
+                </tr>
+                <tr>
+                    <td>SSC</td>                
+                    <td>A</td>                
+                    <td>2019</td>                
+                    <td>Dhaka</td>                
+                </tr>
+                <tr>
+                    <td>Diploma</td>                
+                    <td>??</td>                
+                    <td>2023</td>                
+                    <td>BTEB</td>                
+                </tr>
+                <tr>
+                    <td>B.Sc.</td>                
+                    <td>??</td>                
+                    <td>????</td>                
+                    <td>????</td>                
+                </tr>
+                <tr>
+                    <td>M.Sc.</td>                
+                    <td>??</td>                
+                    <td>????</td>                
+                    <td>????</td>                
+                </tr>
+            </table>
+        </div>
+        <div class="language">
+            <div class="bengali">
+                <h2>Language Skill:</h2>
+                <h3>Bengali</h3>
+                <div class="progress">
+                    <div class="bengali-bar"></div>
+                </div>
+                <span>NATIVE</span>
+            </div>
+
+
+            <div class="english">
+                <h3>English</h3>
+                <div class="progress">
+                    <div class="english-bar"></div>
+                </div>
+                <span>FLUENT</span>
+            </div>
+
+
+            <div class="hindi">
+                <h3>Hindi</h3>
+                <div class="progress">
+                    <div class="hindi-bar"></div>
+                </div>
+                <span>LEARNING</span>
+            </div>
+
+
+            <div class="urdu">
+                <h3>Urdu</h3>
+                <div class="progress">
+                    <div class="urdu-bar"></div>
+                </div>
+                <span>LEARNING</span>
+            </div>
+        </div>
     </div>
 </body>
 </html>
